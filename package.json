@@ -1,0 +1,32 @@
+{
+  "name": "codeforge-ai",
+  "version": "1.0.0",
+  "description": "High-quality, production-minded coding interview preparation platform",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "keywords": [
+    "coding-interview",
+    "typescript",
+    "monorepo",
+    "react",
+    "express",
+    "docker"
+  ],
+  "author": "Himavanth Singh",
+  "license": "MIT"
+}
